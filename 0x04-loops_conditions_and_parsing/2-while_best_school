@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
 # my comments
+c=1
+while [ $c -le 10 ]
+do
+	echo "Best School"
+	(( c++ ))
+done
