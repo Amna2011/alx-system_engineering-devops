@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# my comment
+# shellcheck disable=SC2009
+ps -u
