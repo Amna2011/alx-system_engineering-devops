@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# my comment
 x="Best School"
 i=0
 while [ $i -le 9 ]
