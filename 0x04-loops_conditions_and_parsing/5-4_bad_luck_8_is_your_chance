@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+x="Best School"
+i=0
+while [ $i -le 9 ]
+do
+(( i++ ))
+if [ $i -eq 4 ]; then
+echo "bad luck"
+elif [ $i -eq 8 ]; then
+echo "good luck"
+else
+echo "$x"
+fi
+done
