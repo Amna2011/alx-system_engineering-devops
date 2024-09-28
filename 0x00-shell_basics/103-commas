@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" `ls -a --group-directories-first | sed 's|$|/|' | sort -f | sed 's|/$||g' | tr '\n' ',' | sed 's|,.\.,,.,|..,.,|' | sed 's|,$|\n|'`
+ls -a -m -p
