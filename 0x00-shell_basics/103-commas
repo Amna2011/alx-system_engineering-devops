@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a --group-directories-first | sed -e 's/$/\//' -e '/^\.\?[^\/]$/s/\///' | sort -f | sed '/^\.\?$/!N;/\.\n\.\./!P;D' | paste -s -d ',' | tr -d ' '
+printf "%s\n" `ls -a --group-directories-first | sed 's|$|/|' | sort -f | sed 's|/$||g' | tr '\n' ',' | sed 's|,.\.,,.,|..,.,|' | sed 's|,$|\n|'`
