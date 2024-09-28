@@ -1,0 +1,2 @@
+(ls -a --group-directories-first | sed -e 's/$/\//' -e '/^\.\?[^\/]$/s/\///' | sort -f | sed '/^\.\?$/!N;/\.\n\.\./!P;D' | paste -s -d ',' -) && echo ""
+
